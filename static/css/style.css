@@ -1,0 +1,13 @@
+#profile-wrraper{
+    text-align: center;
+}
+#profile-pic{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.social-links{
+    list-style-type: none;
+}
