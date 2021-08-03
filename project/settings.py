@@ -81,6 +81,16 @@ DATABASES = {
         'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql',
+#         'NAME': 'Demo_test',
+#         'USER': 'postgres',
+#         'PASSWORD': 'messanger8000',
+#         'HOST': 'localhost',
+#         'PORT': '5432',
+#     }
+# }
 
 
 # Password validation
@@ -129,11 +139,4 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
 
 
-EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_PORT = 465
-EMAIL_HOST_USER = 'hamadakamal819@gmail.com'
-EMAIL_HOST_PASSWORD = 'messanger8000'
-# EMAIL_HOST_PASSWORD = 'jnikxbmskwssgcgw' onfire app
-EMAIL_USE_SSL = True
 

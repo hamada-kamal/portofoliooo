@@ -48,7 +48,7 @@
       <div class="profile">
         
         {% if info.avatar %}
-        <img src="{{info.avatar.url}}" alt="" class="img-fluid rounded-circle">
+        <a href="http://127.0.0.1:8000/media/profile_img/avatar.jpeg"><img src="{{info.avatar.url}}" alt="" class="img-fluid rounded-circle"></a>
         {% else %}
         <img src="{% static 'assets/img/default.png' %}" alt="" class="img-fluid rounded-circle">
         {% endif %}
@@ -231,9 +231,10 @@
           {% endif %}
 
 
-
         </div>
-
+        {% if info.youtube_link %}
+        <a class="btn btn-youtube" href="{{info.youtube_link}}">see my projects on <strong>Youtube</strong></a>
+        {% endif %}
       </div>
     </section><!-- End Portfolio Section -->
 
@@ -246,8 +247,8 @@
         <a href="{{info.facebook_link}}" class="facebook"><i class="bx bxl-facebook"></i></a>
         {% endif %}
         
-        {% if info.whatsapp_link %}
-        <a href="{{info.whatsapp_link}}" class="whatsapp"><i class="bx bxl-whatsapp" ></i></a>
+        {% if info.whatsapp %}
+        <a href="https://wa.me/+2{{info.whatsapp}}" class="whatsapp"><i class="bx bxl-whatsapp" ></i></a>
         {% endif %}
         
         {% if info.instagram_link %}

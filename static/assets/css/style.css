@@ -1,13 +1,3 @@
-/**
-* Template Name: iPortfolio - v1.5.1
-* Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
-
-/*--------------------------------------------------------------
-# General
---------------------------------------------------------------*/
 body {
   font-family: "Open Sans", sans-serif;
   color: #272829;
@@ -52,7 +42,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .back-to-top:hover {
   color: #fff;
-  background: #2eafec;
+  background: #ffbc00fc;
   transition: background 0.2s ease-in-out;
 }
 
@@ -69,7 +59,8 @@ h1, h2, h3, h4, h5, h6 {
   z-index: 9997;
   transition: all 0.5s;
   padding: 0 15px;
-  background: #040b14;
+  background: #43494e;
+  /* background: #040b14; */
   overflow-y: auto;
 }
 
@@ -156,6 +147,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 8px;
   transition: 0.3s;
   font-size: 15px;
+
 }
 
 .nav-menu a i {
@@ -171,6 +163,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .nav-menu a:hover i, .nav-menu .active > a i, .nav-menu li:hover > a i {
   color: #149ddd;
+  color: #ffbc00fc;
 }
 
 /* Mobile Navigation */
@@ -210,9 +203,10 @@ h1, h2, h3, h4, h5, h6 {
 --------------------------------------------------------------*/
 #hero {
   width: 100%;
-  height: 100vh;
-  background: url("../img/hero-bg.jpeg") top center;
-  background-size: cover;
+  height: 100vh; 
+  /* css assets statics project */
+  background: url("../img/2.png") top center;
+  background-size: contain;
 }
 
 #hero:before {
@@ -586,6 +580,16 @@ section {
   bottom: 0;
 }
 
+/* img-fluid */
+.portfolio .portfolio-wrap img{
+  height: 250px !important;
+
+
+}
+#about .container .row .profile-pic {
+  width: 30px;
+}
+
 /*--------------------------------------------------------------
 # Services
 --------------------------------------------------------------*/
@@ -804,8 +808,18 @@ section {
   color: #fff;
 }
 
-.contact .info .email:hover i, .contact .info .address:hover i, .contact .info .phone:hover i {
+.contact .info .email:hover i {
   background: #149ddd;
+  color: #fff;
+}
+.contact .info .address:hover i {
+  background: #fff;
+  color: red;
+
+}
+
+.contact .info .whatsapp:hover i {
+  background: #32CD32;
   color: #fff;
 }
 
@@ -1050,31 +1064,47 @@ section {
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
-#footer {
+footer {
   padding: 15px;
   color: #f4f6fd;
   font-size: 14px;
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 300px;
+  /* position: fixed; */
+  /* left: 0; */
+  margin-bottom: -61px;
+  width: 1200px;
+  height: 300px;
   z-index: 9999;
-  background: #040b14;
+  background: #252525;
+  margin-top: 150px;
+  /* background: #040b14; */
+}
+#footer footer .container .social-links a {
+  font-size: 30px;
+  display: inline-block;
+  color: #fff;
+  line-height: 1;
+  padding: 8px 0;
+  margin:18px;
+  border-radius: 50%;
+  text-align: center;
+  width: 36px;
+  height: 36px;
+  transition: 0.3s;
+  margin-top: 100px;
 }
 
-#footer .copyright {
-  text-align: center;
+#footer footer .container .social-links a:hover {
+  color: #ffbc00fc;
+  text-decoration: none;
 }
 
-#footer .credits {
-  padding-top: 5px;
-  text-align: center;
-  font-size: 13px;
-  color: #eaebf0;
-}
+
+
+
+
 
 @media (max-width: 1199px) {
-  #footer {
+  #footer footer {
     position: static;
     width: auto;
     padding-right: 20px 15px;

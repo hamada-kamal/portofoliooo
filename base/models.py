@@ -43,7 +43,7 @@ class About(models.Model):
 
     facebook_link = models.URLField(blank=True, null=True)
     twitter_link = models.URLField(blank=True, null=True)
-    whatsapp_link = models.URLField(blank=True, null=True)
+    whatsapp= models.CharField(max_length=11, blank=True, null=True)
     youtube_link = models.URLField(blank=True, null=True)
     github_link = models.URLField(blank=True, null=True)
     linked_in_link = models.URLField(blank=True, null=True)
